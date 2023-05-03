@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>E-Com Product Listing</h1>
+<form>
+  <label for="product">Product:</label>
+  <input type="text" id="product">
+  <label for="price">Price:</label>
+  <input type="number" id="price">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity"  min="0" max="100">
+  <button type="button" onclick="addProduct()">Add</button>
+</form>
+<ul id="list"></ul>
+<p>Total price: <span id="total"></span></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
